@@ -7,7 +7,7 @@
 - Regular LED (1)
 - IR LED (1)
 - [IR Reciever Module](https://www.amazon.com/Digital-Receiver-Transmitter-Electronic-Building/dp/B08X2MFS6S/ref=sr_1_7?crid=2NCCFPKIWKCZV&keywords=ir+receiver+module&sprefix=ir+receiver+modul%2Caps%2C114&sr=8-7) (1)
-- NPN Transister (1)
+- NPN Transistor (1)
 - Resistors 
 - breadboards, jumper cables
 
@@ -16,7 +16,11 @@
 - [IRLib2](https://github.com/cyborg5/IRLib2)
 
 ## The Circuit
-![](https://i.imgur.com/vSeGn3G.png)
+![](https://i.imgur.com/twgP4qY.png)
+
+## update 8:16:2022
+
+After some testing, I found a bit of a current leakage. It might be through the data line to the NPN transistor as the remedy for this leakage is just attaching a ground wire to one of the ground pins on the arduino to the collector of of the transistor.
 
 # Components Details
 

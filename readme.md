@@ -35,7 +35,7 @@ It's important to use the right resistors with the components you end up with as
 For example, my IR Led current rating is 120 ma peak at 1.6v. My power source is DC 3.3v. Therefore **ohms = (3.3v - 1.6v) / (120ma/1000 ma/a) =  14.166 ohm**. 
 For my circuit, I use 2 10ohms resister in series for a total of 20 ohms.
 
-If the IR Led is connected to the Arduino, I would swap out **120ma** as the operating current for **30ma**. While I was able to get a transmission from as low as 30mah from the pwm 3.3v pins, its not powerful enough to be practical. Use an external power circuit.
+If the IR Led is connected to the Arduino, I would swap out **120ma** as the operating current for **30ma**. While I was able to get a transmission from as low as 30mah from the 3.3v pins, its not powerful enough to be practical. Use an external power circuit.
 
 ## Record IR Signal
 IR Signals are recorded to the serial output as an array of unsigned ints 16. These are the raw buffers recorded and is what can be used in the sendRaw method for the IR sender object. 
